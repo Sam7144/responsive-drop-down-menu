@@ -1,0 +1,13 @@
+@use 'function' as f;
+.footer__images{
+    margin-block-start:f.rem(50);
+    text-align: center;
+    img:not(:last-child){
+        margin-block-end: f.rem(20);
+    }
+    @media(min-width:37.5em){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,54 @@
+@use 'variables' as v;
+@use 'function' as f;
+.side__menu{
+    background-color:wheat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    &__features{
+        margin-block-start:100px;
+        .mobile__features{
+            margin-inline-start: f.rem(30);
+            margin-block-end: f.rem(30);
+            &__test1{
+                .mobile__list{
+                    padding-block: f.rem(10);
+                }
+            }
+            .mobile__test1{
+                display:none;
+            }
+            &__test2{
+                .mobile__list{
+                    padding-block: f.rem(10);
+                }
+            }
+            .mobile__test2{
+                display: none;
+            }
+        }
+    }
+    &__form{
+        margin-inline-start: f.rem(30);
+        .login{
+            width: 80%;
+            text-align: center;
+            margin-inline: auto;
+        }
+        .register{
+            border:1px solid red;
+            width: 80%;
+            text-align: center;
+            padding-block: f.rem(7);
+            border-radius: 10px;
+            margin-inline: auto;
+        }
+    }
+    .side__test{
+        display: none;
+    }
+}
+.side__menu__hide{
+    display: none;
+}

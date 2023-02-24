@@ -1,0 +1,45 @@
+@use 'function' as f;
+.hero{
+    font-size: 2rem;
+    //overflow-x: hidden;
+    .hero__content{
+        margin-block-start: 40px;
+        text-align: center;
+        font-size: 1rem;
+        .hero__description{
+            margin-block-end:2.25rem;
+        }
+        .hero__learn{
+            border: 1px solid red;
+            padding:f.rem(10) ;
+            border-radius: f.rem(10);
+        }
+    }
+}
+.hero__desktop{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .hero__left{
+        margin-block-start: f.rem(130);
+        margin-inline-start: f.rem(100);
+        &__description{
+            width: 100%;
+            font-size: 1.64rem;
+            margin-block-end: f.rem(60);
+        }
+        &__learn{
+            border: 1px solid red;
+            padding-block: f.rem(10);
+            padding-inline: f.rem(30);
+            border-radius: 10px;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-block-start: f.rem(100);
+        }
+    }
+    margin-block-end: f.rem(50);
+
+}
